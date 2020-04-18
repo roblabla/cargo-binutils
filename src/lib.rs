@@ -269,7 +269,7 @@ fn determine_artifact(
         cargo.arg("--release");
     }
 
-    cargo.arg("--message-format=json");
+    cargo.arg("--message-format=json-rendered-ansi");
     cargo.stdout(Stdio::piped());
 
     if verbose {
